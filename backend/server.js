@@ -4,19 +4,26 @@ const mysql = require('mysql2');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: 'https://bhoomij256.github.io',  // Allow only your GitHub Pages URL
+  methods: ['POST']
+}));
 app.use(bodyParser.json());
 
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'bvj459', // use your MySQL password if any
-  database: 'portfolio'
+  database: 'portfolio',
+  port : 3306
 });
 
 db.connect(err => {
-  if (err) console.error('DB error:', err);
-  else console.log('MySQL connected');
+  if (err) {
+    console.error('DB error:', err);
+    return;
+  }
+  console.log('Connected to DB!');
 });
 
 app.post('/contact', (req, res) => {
