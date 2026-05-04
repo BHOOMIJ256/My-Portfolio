@@ -1,0 +1,315 @@
+﻿BHOOMI JAIN
+Portfolio Upgrade & AI Bot
+Complete Build Roadmap ┬╖ 2026
+
+2
+Total Phases
+15+
+Total Tasks
+4ΓÇô6 hrs
+Est. Time
+Pro Portfolio
+Outcome
+
+1. Overview & Goal
+Your current portfolio significantly undersells what you have actually done. Based on your resume, you have 3 full internships with measurable impact, 4 strong AI projects, consecutive academic rank 1 finishes, 2 major leadership roles, and a 10/10 CGPA ΓÇö none of which are properly represented on your site today.
+
+This document is your complete step-by-step roadmap to fix that, and then add a custom AI bot that will set your portfolio apart.
+
+≡ƒÄ»
+Goal: A portfolio that is complete, credible, and uniquely yours ΓÇö beating your brother's in both depth and visual polish, with a smarter embedded AI bot.
+
+Phases at a Glance
+
+01
+Portfolio Refinements
+Fix all content gaps ┬╖ Add missing sections ┬╖ Sharpen every description
+
+02
+The AI Bot
+Floating chat bubble ┬╖ Redirects to Claude or ChatGPT with your full context pre-loaded
+
+
+2. Current vs Target ΓÇö What's Missing
+Element
+Status Today
+Target State
+Browser tab title
+Γ¥î Says 'Your Name'
+Bhoomi Jain | AI Engineer & Data Scientist
+Hero tagline
+ΓÜá∩╕Å Generic filler
+Unique, punchy, memorable line about you
+Experience bullets
+Γ¥î Empty ΓÇö just job title + date
+Real impact metrics from your resume
+Projects (count)
+ΓÜá∩╕Å 4 shown, 2 missing
+All 6 projects shown with descriptions + tech stack
+Achievements section
+Γ¥î Does not exist
+1st rank x2, Budget 2025 seminar, hackathons
+Leadership section
+Γ¥î Does not exist
+CodeCrux founder, Eureka event head
+Certifications section
+Γ¥î Does not exist
+All certs listed with platform badges
+LeetCode link
+Γ¥î Missing from header
+Added alongside GitHub + LinkedIn
+AI Bot
+Γ¥î Does not exist
+Floating ≡ƒÆ¼ bubble ΓåÆ Claude/ChatGPT with your context
+Skills section depth
+ΓÜá∩╕Å Lists only ΓÇö no context
+Grouped, relevant, tied to real work
+About / hero bio
+ΓÜá∩╕Å One generic sentence
+3 lines that tell your actual story
+
+
+3. Phase 1 ΓÇö Portfolio Refinements
+Everything in this phase is a change to your existing index.html and style.css files. No new frameworks, no new tools ΓÇö just adding the content that is already in your resume but missing from your site.
+
+Task 1 ┬╖ Fix the Browser Tab Title
+FILE
+index.html  ΓÇö  <title> tag
+
+Current:
+  <title>Your Name | Portfolio</title>
+Change to:
+  <title>Bhoomi Jain | AI Engineer & Data Scientist</title>
+
+ΓÜí
+This is the #1 thing a recruiter notices when they have 10 tabs open. 'Your Name' is a template default that makes the entire site look unfinished.
+
+Task 2 ┬╖ Rewrite the Hero Tagline
+FILE
+index.html  ΓÇö  Hero / Home section
+
+Current tagline:
+  "Data Scientist | AI Enthusiast"
+New tagline (proposed):
+  "Building AI that ships ΓÇö from autonomous agents to medical diagnostics."
+
+Also expand your hero bio from 1 sentence to 3 lines, like:
+Line 1: Who you are ΓÇö 3rd-year Data Science student at R.A. Podar, CGPA 10/10.
+Line 2: What you build ΓÇö production AI systems using LangGraph, RAG, multi-agent frameworks.
+Line 3: What drives you ΓÇö open to collaborations, freelance, and full-time AI roles.
+
+Task 3 ┬╖ Beef Up All Experience Entries
+FILE
+index.html  ΓÇö  Journey / Experience section
+
+Each internship currently shows only the company name and dates. Replace with the actual bullet points from your resume:
+
+Hrita Solutions Pvt Ltd  |  Jan 2026 ΓÇô Present
+Engineered a role-based CRM (React + Firebase) orchestrating 7+ workflow stages, saving 12+ hours/week of manual coordination.
+Built an automated local-to-cloud Google Sheets sync pipeline handling 2,000ΓÇô10,000 records via specialised agents with schema enforcement.
+
+Softcell Technologies Global  |  Jun 2025 ΓÇô Aug 2025
+Benchmarked MLX vs PyTorch across 3 task types on M3/M4 hardware ΓÇö MLX delivered 7.4x lower memory and 1.9x faster inference on Mistral.
+Implemented distributed PyTorch DDP across a 3-node Mac Mini cluster (M4 Pro), achieving 96ΓÇô97% accuracy at ~69k samples/sec per node.
+Built an end-to-end Legal AI system for contract clause extraction and automated revision suggestions.
+Built a Resume-JD matching platform with LLM-based similarity scoring, processing 50 resumes per bulk run.
+
+Unified Mentor Pvt Ltd  |  Jan 2025 ΓÇô Mar 2025
+Delivered 3 end-to-end ML projects (Cybersecurity Threat Detection, IBM HR Attrition, Study Strategy Optimisation) on datasets up to 50,000 rows, achieving 90%+ accuracy across all three.
+Compared 7 model architectures per task; tuned hyperparameters and validated with precision, recall, F1, and confusion matrix metrics.
+
+Task 4 ┬╖ Add 2 Missing Projects
+FILE
+index.html  ΓÇö  Projects section
+
+Your site currently shows 4 projects. Your resume has 6. Add these two:
+
+Sentinel: Autonomous Multi-Agent Research System
+What it does: A self-correcting LangGraph agent that detects and resolves LLM hallucinations via recursive feedback loops, delivering verified responses in 3ΓÇô10 seconds.
+Tech: LangGraph, LangSmith, GitHub Actions, ArXiv/Tavily routing, full CI/CD.
+Outcome: Production-deployed MLOps pipeline with complete agent logic coverage.
+
+Vidyut Sanchay | Intelligent Power Grid Orchestrator
+What it does: Multi-agent procurement system integrating live market and logistics APIs using LangGraph + Llama-3.
+Tech: LangGraph, Llama-3, ExtraTreesRegressor, Docker.
+Outcome: 10ΓÇô20% performance gain over baseline; 20ΓÇô40% reduction in inference load time for 3GB+ models via Docker volume mounting.
+
+Also update the 4 existing project cards with proper one-line descriptions and tech stack tags ΓÇö currently they show zero information besides the title.
+
+Task 5 ┬╖ Add Achievements & Leadership Section
+FILE
+index.html  ΓÇö  New section after Projects
+
+This is the section your brother has and you currently lack entirely. Add the following:
+
+Academic Excellence
+First Rank in FY BSc AND SY BSc (Data Science & Analytics) ΓÇö highest scores in 5+ subjects across both years.
+CGPA: 10/10 ΓÇö Mumbai University (current).
+HSC: 91.8%  ┬╖  SSC: 96.6%
+
+Leadership & Events
+CodeCrux ΓÇö Event Head: Founded the college's first inter-university coding competition; managed a 12-person team from ideation to execution.
+Eureka ΓÇö Event Head: Designed and ran a real-world business case study event under the R&D Department, sourcing industry-grade problem statements.
+Budget 2025 Seminar: Collaborated and worked directly under the Principal Income Tax Commissioner for the Budget 2025 seminar hosted at college.
+
+≡ƒÅå
+These three points alone ΓÇö founding a college's first inter-university competition, working under an Income Tax Commissioner, and consistent rank 1 ΓÇö are genuinely rare. Make sure they are visible and specific.
+
+Task 6 ┬╖ Add Certifications Section
+FILE
+index.html  ΓÇö  New section (after Achievements)
+STATUS
+Waiting for your certifications list
+
+Once you share your certifications, we will build this section with:
+Certification name
+Issuing platform (Coursera, Google, Udemy, DeepLearning.AI, etc.)
+Year completed
+Clickable link or badge if available
+
+Task 7 ┬╖ Add LeetCode to Header Links
+FILE
+index.html  ΓÇö  Navbar / header links
+STATUS
+Waiting for your LeetCode username
+
+Add LeetCode alongside your existing GitHub and LinkedIn links at the top of the page. Format:
+  GitHub  |  LinkedIn  |  LeetCode  |  Email  |  Download CV
+
+Task 8 ┬╖ Refine About / Hero Bio
+FILE
+index.html  ΓÇö  Home section bio text
+
+Current bio is one generic sentence that could belong to anyone. Replace with:
+
+I am a Data Science & Analytics student at R.A. Podar College (CGPA: 10/10), currently working as an AI Intern at Hrita Solutions ΓÇö building multi-agent systems, RAG pipelines, and production AI tools that actually ship.
+I have interned at Softcell Technologies and Unified Mentor, founded my college's first inter-university coding competition (CodeCrux), and ranked 1st in my department two years running.
+Open to collaborations, freelance AI projects, and full-time opportunities.
+
+
+4. Phase 2 ΓÇö The AI Bot
+The bot is a floating ≡ƒÆ¼ chat bubble in the bottom-right corner of your portfolio. When clicked, it opens a panel offering two options: ChatGPT and Claude. Both links open pre-filled with a detailed system prompt about you, so the AI already knows everything ΓÇö visitors can just start asking questions.
+
+≡ƒñû
+This approach requires zero API keys, zero server, zero cost. It works entirely via URL parameters and works on GitHub Pages out of the box.
+
+How It Works ΓÇö Technically
+
+1
+Visitor clicks the ≡ƒÆ¼ bubble in the bottom-right corner of your site.
+2
+A small panel pops up with your name, a one-liner, and two buttons: ChatGPT and Claude.
+3
+Clicking ChatGPT opens: chatgpt.com/?q=[your pre-filled context prompt]
+4
+Clicking Claude opens: claude.ai/new?q=[your pre-filled context prompt]
+5
+The AI receives everything about you as the first message ΓÇö projects, skills, experience, personality ΓÇö and the visitor just starts chatting.
+
+What the Pre-Filled Prompt Will Say
+The context prompt sent to both AIs will contain:
+Your name, college, degree, CGPA
+All 3 internships with their key accomplishments
+All 6 projects with tech stacks and outcomes
+Your skills and tech stack
+Your achievements ΓÇö rank 1 x2, CodeCrux, Eureka, Budget seminar
+Your certifications and LeetCode profile
+A note that you are open to collaborations and opportunities
+Instruction for the AI: 'Answer questions about Bhoomi Jain as a helpful assistant who knows her portfolio.'
+
+What the Bot Panel Looks Like
+
+Hi! I'm Bhoomi's AI ≡ƒæï
+Ask me anything about Bhoomi ΓÇö her projects, skills, experience, or availability.
+[ Chat with Claude ]          [ Chat with ChatGPT ]
+
+Visual Design of the Bubble
+Position: Fixed, bottom-right corner (bottom: 28px, right: 28px)
+Shape: Circular button, ~56px diameter
+Icon: ≡ƒÆ¼ emoji or SVG chat icon
+Color: Matches your portfolio's existing accent color
+Animation: Subtle pulse ring on first load to draw attention
+Panel: Slides up from bottom-right, ~300px wide, rounded corners, glassmorphism or solid card
+
+What You Need to Provide for the Bot
+Before I write the final bot code, I still need:
+
+
+Item
+Status
+Γ£à
+Resume content (projects, experience, achievements)
+Done ΓÇö extracted from your PDF
+ΓÅ│
+Certifications list
+Waiting ΓÇö please share name + platform
+ΓÅ│
+LeetCode username/URL
+Waiting ΓÇö please share your profile link
+Γ£à
+Bot style preference
+Floating ≡ƒÆ¼ bubble ΓÇö confirmed
+Γ£à
+Color scheme
+Match existing portfolio colors ΓÇö confirmed
+
+
+5. Execution Order ΓÇö Step by Step
+Follow this exact sequence. Each step is unblocked and ready to go except where marked WAITING.
+
+#
+Task
+What I Need from You
+Output File
+1
+Fix title + tagline + bio
+Share index.html source
+index.html
+2
+Beef up experience sections
+index.html source
+index.html
+3
+Add 2 missing projects
+index.html source
+index.html
+4
+Add Achievements section
+index.html source
+index.html
+5
+Add Certifications section
+ΓÅ│ Your certifications list
+index.html
+6
+Add LeetCode to header
+ΓÅ│ Your LeetCode username
+index.html
+7
+Build the AI bot widget
+index.html + certs + LeetCode
+bot.js or inline script
+8
+Final review + deploy
+Upload both files to GitHub repo
+Live on GitHub Pages
+
+
+6. What You Need to Share Next
+To begin building immediately, share the following in our chat:
+
+Your certifications ΓÇö name + platform (e.g., 'Machine Learning Specialization ΓÇö Coursera')
+Your LeetCode username or full profile URL
+The raw HTML of your index.html file ΓÇö go to GitHub repo ΓåÆ index.html ΓåÆ Raw ΓåÆ copy all
+Your style.css file (same method) ΓÇö so the bot matches your exact colors
+
+≡ƒÜÇ
+Once you share the index.html and style.css, I will produce your complete updated files ΓÇö ready to upload directly to your GitHub repo with zero extra steps.
+
+Steps 1ΓÇô4 (title, bio, experience, projects, achievements) are fully unblocked and can be done the moment you share your HTML file.
+Steps 5ΓÇô7 (certifications, LeetCode, bot) become unblocked once you share those two remaining details.
+
+
+Ready when you are.
+Share your HTML + certifications + LeetCode and we start building.
+bhoomi901jain@gmail.com  ┬╖  github.com/BHOOMIJ256

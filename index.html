@@ -1,284 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name | Portfolio</title>
+  <title>Bhoomi Jain | AI Engineer & Data Scientist</title>
   <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Navbar -->
-<header>
-  <nav class="navbar">
-    <div class="brand-name"><span>Bhoomi</span>Jain</div>
-
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a href="assets/Bhoomi jain Resume.pdf" download class="resume-btn">Download CV</a>
-      </li>
-    </ul>
-  </nav>
-</header>
-
-
-
-  <!-- Sections -->
-  <section id="home">
-  <div class="hero">
-    <!-- <div class="vertical-text">Data Scientist</div>
-     -->
-    <div class="intro-text">
-      <h1 class = "typing-text"></h1>
-
-       <!-- New Animated h2 -->
-      <h2 class="fade-in-heading">Data Scientist | AI Enthusiast</h2>
-
-      <p >A lifelong learner and AI enthusiast who enjoys exploring the art of data science — from analytics to algorithms — and turning challenges into opportunities with smart data-backed solutions.
-
-.</p>
-
-    <!-- Add in <head> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-<!-- Replace the image tags like this -->
-<div class="social-icons">
-  <a href="https://github.com/BHOOMIJ256" target="_blank" class="icon-circle"><i class="fab fa-github"></i></a>
-  <a href="https://www.linkedin.com/in/bhoomi-jain-m2605/" target="_blank" class="icon-circle"><i class="fab fa-linkedin-in"></i></a>
-  <a href="mailto:bhoomi901jain@gmail.com" class="icon-circle"><i class="fas fa-envelope"></i></a>
-</div>
-
-</div>
-    
-    <div class="image-container">
-      <img src="assets/Codecrux.jpg" alt="Bhoomi Jain" />
-    </div>
-  </div>
-</section>
-
-  <section id="education">
-  <div class = "section-header">
-  <h1>My Journey</h1>
-  </div>
-
-  <div class="timeline">
-
-    <div class="timeline-item left">
-      <span class="year">2021</span>
-      <div class="content">
-        <h3>10th Grade (SSC)</h3>
-        <p>Mary Immaculate Girls High School<br>Score: 96.6%</p>
+  <header>
+    <nav class="navbar">
+      <div class="brand-name"><span>Bhoomi</span>Jain</div>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="assets/Bhoomi jain Resume.pdf" download class="resume-btn">Download CV</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="timeline-item right">
-      <span class="year">2023</span>
-      <div class="content">
-        <h3>12th Grade (HSC)</h3>
-        <p>R.A Podar College Of Commerce & Economics<br>Percent : 92%</p>
-      </div>
-    </div>
+  <!-- Hero Section -->
+  <section id="home" data-aos="fade-up">
+    <div class="hero">
+      <div class="intro-text">
+        <h1 class="typing-text"></h1>
+        <h2 class="fade-in-heading">Building AI that ships — from autonomous agents to medical diagnostics.</h2>
+        <p>3rd-year Data Science student at R.A. Podar (CGPA 10/10), building production AI systems using <a
+            href="#projects" style="color: var(--primary); text-decoration: underline;">LangGraph</a>,
+          <a href="#projects" style="color: var(--primary); text-decoration: underline;">RAG</a>, and <a
+            href="#projects" style="color: var(--primary); text-decoration: underline;">multi-agent frameworks</a>. Open
+          to collaborations, freelance, and full-time AI roles.
+        </p>
 
-    <div class="timeline-item left">
-      <div class="content">
-        <h3>Bachelor's in Data Science & Analytics </h3>
-        <p>R.A Podar College of Commerce & Economics, 2023–2026<br>CGPA:10/10 (Current)</p>
-      </div>
-    </div>
-
-    <div class="timeline-item right">
-      <span class ="year">2025</span>
-      <div class="content">
-        <h3>Data Science</h3>
-        <p>Unified Mentor Pvt Ltd, (Jan 2025 - Mar 2025)</p>
-      </div>
-    </div>
-
-    <div class="timeline-item left">
-      <div class="content">
-        <h3>Artificial Intelligence Intern </h3>
-        <p>Softcell Technologies Global Pvt Ltd <br>(June 2025–July 2025)</p>
-      </div>
-    </div>
-
-    <div class="timeline-item right">
-      <span class="year">2026</span>
-      <div class="content">
-        <h3>Artificial Intelligence Intern</h3>
-        <p>Hrita Solutions Pvt Ltd <br>(Jan 2026 - Current)</p>
+        <div class="social-icons">
+          <a href="https://github.com/BHOOMIJ256" target="_blank" class="icon-circle"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/bhoomi-jain-m2605/" target="_blank" class="icon-circle"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://leetcode.com/u/5wQsX8VodE/" target="_blank" class="icon-circle" id="leetcode-link"><i
+              class="fas fa-code"></i></a>
+          <a href="mailto:bhoomi901jain@gmail.com" class="icon-circle"><i class="fas fa-envelope"></i></a>
+        </div>
       </div>
 
-  </div>
-</section>
+      <div class="image-container">
+        <img src="assets/Codecrux.jpg" alt="Bhoomi Jain" />
+      </div>
+    </div>
+  </section>
 
-
- <!-- Skills Section -->
-<section id="skills" class="skills-section">
-  <div class="skills-heading">
-    <h2>Work Skills</h2>
-    <p>Here’s a snapshot of my technical expertise across various domains in programming and data science..</p>
-  </div>
-
-
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Programming Languages</h3>
-      <ul>
-        <li>C++</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>SQL</li>
-      </ul>
+  <!-- Journey Section -->
+  <section id="education" data-aos="fade-up">
+    <div class="section-header">
+      <h1>My Journey</h1>
     </div>
 
-    <div class="skill-card">
-      <h3>Web Development</h3>
-      <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>FastApi, Flask, Django</li>
-        <li>React, Node.js, Typescript.js,</li>
-        <li>Render, Vercel, Railway</li>
-      </ul>
+    <div class="timeline">
+      <div class="timeline-item left">
+        <span class="year">2026</span>
+        <div class="content">
+          <h3>Artificial Intelligence Intern</h3>
+          <p>Hrita Solutions Pvt Ltd (Jan 2026 - Present)</p>
+          <ul class="impact-list">
+            <li>Engineered a role-based CRM (React + Firebase) orchestrating 7+ workflow stages, saving 12+ hours/week.
+            </li>
+            <li>Built an automated local-to-cloud Google Sheets sync pipeline with schema enforcement.</li>
+          </ul>
+          <button class="details-toggle" onclick="toggleDetails(this)">Details <i
+              class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="year">2025</span>
+        <div class="content">
+          <h3>Artificial Intelligence Intern</h3>
+          <p>Softcell Technologies Global (June 2025 – Aug 2025)</p>
+          <ul class="impact-list">
+            <li>Benchmarked MLX vs PyTorch achieving 7.4x lower memory on M3/M4 hardware.</li>
+            <li>Implemented distributed PyTorch DDP across a 3-node cluster.</li>
+            <li>Built Legal AI and Resume-JD matching platforms.</li>
+          </ul>
+          <button class="details-toggle" onclick="toggleDetails(this)">Details <i
+              class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="year">2025</span>
+        <div class="content">
+          <h3>Data Science Intern</h3>
+          <p>Unified Mentor Pvt Ltd (Jan 2025 - Mar 2025)</p>
+          <ul class="impact-list">
+            <li>Delivered 3 ML projects (Cybersecurity, Attrition) with 90%+ accuracy.</li>
+            <li>Optimized hyperparameters across 7 model architectures.</li>
+          </ul>
+          <button class="details-toggle" onclick="toggleDetails(this)">Details <i
+              class="fas fa-chevron-down"></i></button>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="year">2023-26</span>
+        <div class="content">
+          <h3>BSc in Data Science & Analytics</h3>
+          <p>R.A Podar College of Commerce & Economics<br>CGPA: 10/10 (Current)</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <span class="year">2023</span>
+        <div class="content">
+          <h3>12th Grade (HSC)</h3>
+          <p>R.A Podar College<br>Score: 91.8%</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <span class="year">2021</span>
+        <div class="content">
+          <h3>10th Grade (SSC)</h3>
+          <p>Mary Immaculate Girls High School<br>Score: 96.6%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <div class="section-header">
+      <h1>Work Skills</h1>
+      <p>Technical expertise across various domains in programming and data science.</p>
     </div>
 
-    <div class="skill-card">
-      <h3>Data Analysis & Visualization</h3>
-      <ul>
-        <li>Pandas, NumPy, Scipy</li>
-        <li>Matplotlib, Seaborn, Plotly</li>
-        <li>Microsoft Office suite,PowerBi</li>
-        <li>EDA & Visualization</li>
-      </ul>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Programming</h3>
+        <div class="tech-tags">
+          <span>C++</span><span>Python</span><span>JavaScript (ES6+)</span><span>SQL</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <div class="tech-tags">
+          <span>HTML5/CSS3</span><span>React</span><span>Node.js</span><span>TypeScript</span><span>FastAPI</span><span>Flask</span><span>Django</span><span>Render</span><span>Vercel</span><span>Railway</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
+        <div class="tech-tags">
+          <span>Pandas</span><span>NumPy</span><span>Scipy</span><span>Matplotlib</span><span>Seaborn</span><span>Plotly</span><span>PowerBI</span><span>EDA</span><span>MS
+            Office</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Machine Learning</h3>
+        <div class="tech-tags">
+          <span>Supervised/Unsupervised</span><span>Regression</span><span>Classification</span><span>SVM</span><span>Random
+            Forest</span><span>Model Evaluation</span><span>Hyperparameter Tuning</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>Deep Learning</h3>
+        <div class="tech-tags">
+          <span>TensorFlow/Keras</span><span>PyTorch</span><span>Neural
+            Networks</span><span>CNN</span><span>RNN</span><span>LSTM</span><span>Transfer Learning</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <h3>AI & MLOps</h3>
+        <div class="tech-tags">
+          <span>LangGraph</span><span>LangChain</span><span>RAG</span><span>MLOps</span><span>Git/GitHub</span><span>Docker</span><span>VS
+            Code</span><span>Jupyter/Colab</span><span>MySQL/SQLite</span>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="skill-card">
-      <h3>Machine Learning</h3>
-      <ul>
-        <li>Supervised / Unsupervised</li>
-        <li>Regression, Classification</li>
-        <li>SVM, Random Forest</li>
-        <li>Model Evaluation</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>Deep Learning</h3>
-      <ul>
-        <li>TensorFlow / Keras</li>
-        <li>Neural Networks</li>
-        <li>CNN, RNN, LSTM</li>
-        <li>Transfer Learning</li>
-      </ul>
-    </div>
-
-    <div class="skill-card">
-      <h3>Tools & Platforms</h3>
-      <ul>
-        <li>Git & GitHub</li>
-        <li>Jupyter / Colab</li>
-        <li>VS Code</li>
-        <li>MySQL / SQLite</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-
-  <section id="projects">
-  <div class="section-header">
-    <h1>My Projects</h1>
-    <p>A quick glance at the work I've done recently.</p>
-  </div>
-
-  <div class="project-container">
-    <div class="project-card">
-      <h3>AI-Powered MarketPlace Assistant For Local Artisans </h3>
-      <img src="assets/Artisans.jpg" alt="Project Screenshot">
-      <a href = "https://github.com/BHOOMIJ256/AI-Powered-Marketplace-Assistant-for-Local-Artisans">
-      <button class="arrow-btn">→</button></a>
-    </div>
-
-    <div class="project-card">
-      <h3>Smart Symtom Checker and Medical Memory Platform</h3>
-      <img src="assets/Healthh.jpg" alt="Project Screenshot">
-      <a href = "https://github.com/BHOOMIJ256/Smart-Symptom-Checker-Medical-Memory">
-      <button class="arrow-btn">→</button></a>
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <div class="section-header">
+      <h1>My Projects</h1>
+      <p>Selected works in AI and Data Science.</p>
     </div>
 
     <div class="project-container">
-    <div class="project-card">
-      <h3>Context Aware Email Triage System For Enterprise </h3>
-      <img src="assets/Triage.png" alt="Project Screenshot">
-      <a href = "https://github.com/BHOOMIJ256/Context_Aware_Email_Triage_system">
-      <button class="arrow-btn">→</button></a>
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <h3>Sentinel: Multi-Agent Research</h3>
+        <p class="project-desc">Self-correcting LangGraph agent that detects and resolves LLM hallucinations.</p>
+        <div class="tech-tags">
+          <span>LangGraph</span><span>LangSmith</span><span>MLOps</span>
+        </div>
+        <a href="https://github.com/BHOOMIJ256/Sentinel-Multi-Agent-Research" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <h3>Vidyut Sanchay | Grid Orchestrator</h3>
+        <p class="project-desc">Multi-agent procurement system using LangGraph + Llama-3 for power grid management.</p>
+        <div class="tech-tags">
+          <span>LangGraph</span><span>Llama-3</span><span>Docker</span>
+        </div>
+        <a href="https://github.com/BHOOMIJ256/Vidyut-Sanchay" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+        <h3>AI MarketPlace Assistant</h3>
+        <p class="project-desc">Hyper-local assistant for artisans using RAG for inventory and customer interaction.</p>
+        <div class="tech-tags">
+          <span>Python</span><span>FastAPI</span><span>RAG</span>
+        </div>
+        <img src="assets/Artisans.jpg" alt="Artisans Project">
+        <a href="https://github.com/BHOOMIJ256/AI-Powered-Marketplace-Assistant-for-Local-Artisans" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+        <h3>Smart Symptom Checker</h3>
+        <p class="project-desc">Medical platform with diagnosis suggestions and medical history tracking.</p>
+        <div class="tech-tags">
+          <span>TensorFlow</span><span>Flask</span><span>NLP</span>
+        </div>
+        <img src="assets/Healthh.jpg" alt="Health Project">
+        <a href="https://github.com/BHOOMIJ256/Smart-Symptom-Checker-Medical-Memory" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+        <h3>Email Triage System</h3>
+        <p class="project-desc">Enterprise classifier that routes and summarizes internal communications using BERT.</p>
+        <div class="tech-tags">
+          <span>BERT</span><span>PyTorch</span><span>Docker</span>
+        </div>
+        <img src="assets/Triage.png" alt="Email Triage">
+        <a href="https://github.com/BHOOMIJ256/Context_Aware_Email_Triage_system" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+        <h3>Sign Language Extension</h3>
+        <p class="project-desc">Real-time sign language translation tool for web accessibility.</p>
+        <div class="tech-tags">
+          <span>MediaPipe</span><span>JavaScript</span><span>OpenCV</span>
+        </div>
+        <img src="assets/Sign.jpg" alt="Sign Language">
+        <a href="https://github.com/BHOOMIJ256/Sign-Language-Browser-Extension" class="arrow-btn">
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
     </div>
 
-
-    <div class="project-card">
-      <h3>Sign Language Browser Extension</h3>
-      <img src="assets/Sign.jpg" alt="Project Screenshot">
-      <a href = "https://github.com/BHOOMIJ256/Sign-Language-Browser-Extension">
-      <button class="arrow-btn">→</button></a>
+    <div style="text-align: center; margin-top: 4rem;">
+      <a href="https://github.com/BHOOMIJ256" class="resume-btn" style="text-decoration: none;">See All Projects →</a>
     </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" data-aos="fade-up">
+    <div class="section-header">
+      <h1>Achievements & Leadership</h1>
+    </div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <i class="fas fa-trophy"></i>
+        <h3>Academic Excellence</h3>
+        <p><strong>First Rank</strong> in FY & SY BSc (Data Science).<br>CGPA: 10/10 — Mumbai University.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fas fa-users"></i>
+        <h3>CodeCrux Head</h3>
+        <p>Founded college's first coding competition; managed a 12-person team.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fas fa-lightbulb"></i>
+        <h3>Eureka Head</h3>
+        <p>Designed industry-grade business case study events for R&D.</p>
+      </div>
+
+      <div class="achievement-card">
+        <i class="fas fa-landmark"></i>
+        <h3>Budget 2025 Seminar</h3>
+        <p>Worked under the Principal Income Tax Commissioner for college seminar.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Beyond the Code Section -->
+  <section id="beyond" data-aos="fade-up">
+    <div class="section-header">
+      <h1>Beyond the Code</h1>
+      <p>The discipline, creativity, and curiosity that fuel my engineering.</p>
+    </div>
+
+    <div class="bento-grid">
+      <div class="bento-item reading">
+        <i class="fas fa-book-open"></i>
+        <h3>Keen Reader</h3>
+        <p>Exploring everything from tech deep-dives to philosophical narratives.</p>
+      </div>
+      <div class="bento-item fitness">
+        <i class="fas fa-dumbbell"></i>
+        <h3>Fitness Enthusiast</h3>
+        <p>Consistency in the gym translates to discipline in development.</p>
+      </div>
+      <div class="bento-item culinary">
+        <i class="fas fa-utensils"></i>
+        <h3>Culinary Artist</h3>
+        <p>Experimenting with flavors and precision in the kitchen.</p>
+      </div>
+      <div class="bento-item creative">
+        <i class="fas fa-palette"></i>
+        <h3>Creative Soul</h3>
+        <p>Dance, writing, and multidisciplinary artistic works.</p>
+      </div>
+    </div>
+
+    <!-- System Specs (Pros & Cons) -->
+    <div class="system-audit">
+      <div class="audit-header">
+        <i class="fas fa-microchip"></i>
+        <h2>System Specs (Audit Report v1.0)</h2>
+      </div>
+      <div class="audit-grid">
+        <div class="audit-card pros">
+          <h3><i class="fas fa-check-circle"></i> Optimization Points (Pros)</h3>
+          <ul>
+            <li><strong>High Throughput:</strong> 10/10 CGPA discipline; high-speed project execution.</li>
+            <li><strong>Low Latency:</strong> Rapid framework adoption (LangGraph/RAG).</li>
+            <li><strong>Creative Overfitting:</strong> Artistic eye for unique UI/UX solutions.</li>
+          </ul>
+        </div>
+        <div class="audit-card cons">
+          <h3><i class="fas fa-exclamation-triangle"></i> Known Bugs (Cons)</h3>
+          <ul>
+            <li><strong>Recursive Depth:</strong> Can spend 12 hours refining a single "perfect" solution.</li>
+            <li><strong>High Memory Usage:</strong> Constantly reading/writing/creating; zero idle time.</li>
+            <li><strong>GPU Dependent:</strong> Requires heavy doses of coffee and art to maintain peak performance.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <div class="section-header">
+      <h1>Contact Me</h1>
+    </div>
+
+    <!-- Replace 'YOUR_FORM_ID' with your actual Formspree ID later -->
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="contact-form">
+      <div class="contact-container">
+        <div class="contact-left">
+          <input type="text" name="name" id="name" placeholder="Name" required />
+          <input type="email" name="email" id="email" placeholder="Email" required />
+          <input type="text" name="subject" id="subject" placeholder="Subject" required />
+        </div>
+        <div class="contact-right">
+          <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <!-- AI Bot UI -->
+  <div class="bot-bubble" id="bot-bubble">💬</div>
+  <div class="bot-panel" id="bot-panel">
+    <h4>Bhoomi's AI Assistant</h4>
+    <p>Ask me about her experience, projects, or academic achievements.</p>
+    <a href="#" class="bot-btn claude" id="chat-claude">Chat with Claude</a>
+    <a href="#" class="bot-btn gpt" id="chat-gpt">Chat with ChatGPT</a>
   </div>
 
-  <div class="see-all">
-    <a href = "https://github.com/BHOOMIJ256">
-    <button>See All →</button></a>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form id="contact-form">
-    <div class="contact-container">
-      <div class="contact-left">
-        <input type="text" id="name" placeholder="Name" required />
-        <input type="email" id="email" placeholder="Email" required />
-        <input type="text" id="subject" placeholder="Subject" required />
-      </div>
-      <div class="contact-right">
-        <textarea id="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Submit</button>
-      </div>
-    </div>
-  </form>
-</section>
-
-<script>
-  document.getElementById('contact-form').addEventListener('submit', async function (e) {
-    e.preventDefault();
-
-    const data = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      subject: document.getElementById('subject').value,
-      message: document.getElementById('message').value,
-    };
-
-    try {
-      const response = await fetch('https://my-portfolio-1-60sa.onrender.com/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
-      });
-
-      const text = await response.text();
-      alert(text);
-    } catch (err) {
-      alert('Something went wrong. Please try again.');
-    }
-  });
-</script>
-
-
-
+  <!-- Back to Top Button -->
+  <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+  </script>
 </body>
+
 </html>
