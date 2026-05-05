@@ -1,12 +1,17 @@
 // Smooth scroll
 document.querySelectorAll("a[href^='#']").forEach(anchor => {
   anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth"
-      });
+    const href = this.getAttribute("href");
+    
+    // Only smooth scroll if it's a valid internal ID (e.g., #home, not just # or a full URL)
+    if (href.startsWith('#') && href.length > 1) {
+      e.preventDefault();
+      const target = document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth"
+        });
+      }
     }
   });
 });
@@ -47,30 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    const bhoomiContext = `
-        You are an AI assistant representing Bhoomi Jain. Use the following details to answer questions about her:
-        - Identity: 3rd-year Data Science student at R.A. Podar College (CGPA 10/10). AI Engineer & Data Scientist.
-        - Experience:
-          1. Hrita Solutions (Current): Built role-based CRM (React/Firebase) and automated local-to-cloud sync pipeline.
-          2. Softcell Technologies: Benchmarked MLX vs PyTorch (M4 hardware), built Legal AI system and Resume-JD matching platform.
-          3. Unified Mentor: Delivered end-to-end ML projects (Cybersecurity, HR Attrition) with 90%+ accuracy.
-        - Projects: 
-          1. Sentinel: Autonomous LangGraph research system with hallucination checks.
-          2. Vidyut Sanchay: Intelligent power grid orchestrator using LangGraph and Llama-3.
-          3. AI Marketplace Assistant: RAG-based tool for local artisans.
-          4. Smart Symptom Checker: Medical diagnostic platform.
-          5. Context Aware Email Triage: BERT-based enterprise classifier.
-        - Achievements: Ranked 1st in FY and SY BSc, Founded CodeCrux (college's first coding competition), Event Head for Eureka, Worked on Budget 2025 seminar.
-        - Skills: LangGraph, Python, React, TensorFlow, PyTorch, MLOps, SQL.
-        - Goal: Looking for collaborations, freelance, or full-time AI roles.
-        
-        Answer professionally and highlight her technical depth and academic excellence.
-    `;
+    const bhoomiContext = `Visit https://bhoomij256.github.io/My-Portfolio/ and tell me about Bhoomi Jain — her experience, what she's built, and what she's working on. Be direct and concise.`;
 
     const encodedContext = encodeURIComponent(bhoomiContext.trim());
 
-    chatClaude.href = `https://claude.ai/new?q=${encodedContext}`;
-    chatGpt.href = `https://chatgpt.com/?q=${encodedContext}`;
+    if (chatClaude) chatClaude.href = `https://claude.ai/new?q=${encodedContext}`;
+    if (chatGpt) chatGpt.href = `https://chatgpt.com/?q=${encodedContext}`;
   }
 });
 

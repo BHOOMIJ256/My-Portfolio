@@ -437,6 +437,11 @@ section {
   justify-content: center;
   cursor: pointer;
   transition: var(--transition);
+  text-decoration: none !important;
+}
+
+.project-card a {
+  text-decoration: none !important;
 }
 
 .arrow-btn:hover {
@@ -450,49 +455,6 @@ section {
   margin-bottom: 1.5rem;
 }
 
-/* Contact Section */
-#contact {
-  background: var(--bg-surface);
-  border-top: 1px solid var(--border-subtle);
-}
-
-.contact-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
-
-.contact-left input, .contact-right textarea {
-  width: 100%;
-  background: var(--bg-deep);
-  border: 1px solid var(--border-subtle);
-  padding: 1rem;
-  border-radius: 12px;
-  color: var(--text-main);
-  font-family: inherit;
-  transition: var(--transition);
-}
-
-.contact-left input:focus, .contact-right textarea:focus {
-  border-color: var(--primary);
-  outline: none;
-}
-
-.contact-right button {
-  background: var(--primary);
-  color: var(--bg-deep);
-  border: none;
-  padding: 1rem 2rem;
-  border-radius: 12px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.contact-right button:hover {
-  background: var(--primary-hover);
-  transform: translateY(-2px);
-}
 
 /* Bot UI */
 .bot-bubble {
